@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="Canvas"></canvas>
+
+    <nav>
+        <img class="big" src="Screenshot_2023-02-08_at_7.14.08_PM-removebg-preview.png" alt="">
+        <img class="small" src="heart.png" alt="">
+        <img class="right" src="heart.png" alt="">
+        <h1>Happy Valentine's Day <br> ...❤️</h1>
+    </nav>
+
+
+     <!--------- Audio Player ------------>
+     <div class="song">
+        <h1>Click here → </h1>
+        <button id="pausePlay">Play</button>
+        <audio id="music" src="dandelion.mp3"></audio>
+        
+          <script>
+            var audio = document.getElementById("music");
+            var pausePlay = document.getElementById("pausePlay");
+           pausePlay.addEventListener("click", function() {
+            if (audio.paused) {
+            audio.play();
+           pausePlay.innerHTML = "Pause";
+           } else {
+           audio.pause();
+            pausePlay.innerHTML = "Play";
+           }
+           });
+
+          </script>
+     </div>
+    
+
+     <!---------- Creating main bar --------->
+     <div class="main">
+       <img src="22.jpeg" alt="">
+       <div class="text">
+        <h1>Lorem, ipsum.</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nemo voluptas officiis quos dolore adipisci, hic doloremque. Nostrum, reiciendis consequuntur.
+        </p>
+       </div>
+     </div>
+     
+     <div class="main">
+        <img src="21.webp" alt="">
+        <div class="text">
+         <h1>Lorem, ipsum dolor.</h1>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, libero architecto! Facilis provident, nisi harum magnam, nesciunt tempore consequuntur quia, eaque quasi amet voluptate eius.
+         </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="23.webp" alt="">
+        <div class="text">
+         <h1>Lorem, ipsum dolor. </h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem labore distinctio odio repellendus ea eligendi porro ex laboriosam eaque fugiat, voluptas dicta vitae enim. Tenetur.
+         </p>
+        </div>
+      </div>
+     <!-------- Creating a last bar -------->
+     
+     <div class="last">
+        <img src="happy-valentine-s-day-greeting-card-cover-template-heart-frame-with-label-heart-consisting-multitude-hearts-with-space-text-illustration_257312-213.avif" alt="">
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
